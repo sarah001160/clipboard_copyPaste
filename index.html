@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>複製文字</title>
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- vue3 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="all.min.js"></script>
+</head>
+
+<body>
+  <main id="app" class="container max-w-4xl mx-auto p-6">
+    <section>
+      <div class="mb-6">
+        <h2 class="py-2 pl-4 w-full bg-gray-400 text-white">公司法19條</h2>
+        <div class="border p-2 bg-gray-100">
+          <div class="p-2 my-2" ref="text1">
+            第19條
+            未經設立登記，不得以公司名義經營業務或為其他法律行為。
+            違反前項規定者，行為人處一年以下有期徒刑、拘役或科或併科新臺幣十五萬元以下罰金，並自負民事責任；行為人有二人以上者，連帶負民事責任，並由主管機關禁止其使用公司名稱。
+
+            △以籌備處名義為法律行為
+            按公司法19條規定：「未經設立登記，不得以公司名義經營業務或為其他法律行為。違反前項規定者，行為人處1年以下有期徒刑、拘役或科或併科新臺幣15萬元以下罰金，並自負民事責任；行為人有2人以上者，連帶負民事責任，並由主管機關禁止其使用公司名稱」，旨在禁止未經公司法設立之公司，假借公司名義營業或為其他法律行為，以維護交易安全。惟如公司在設立階段，以籌備處名義為相關法律行為，因有公司籌備處字樣以資區別，則不在公司法第19條規範範疇。又如設立登記前，發起人應繳之股款，以送存該公司籌備處名義開立之金融機構帳戶，並無不可。復按公司法第6條規定：「公司非在中央主管機關登記後，不得成立」；而設立中之公司，尚未取得法人人格，自不得為公司股東，併為敘明。
+            （經濟部96年2月8日經商字第09602015420號函）
+          </div>
+          <button class="btn p-2 my-2 border bg-sky-500 text-white rounded-md" @click="getRef('text1')">點我複製</button>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <h2 class="py-2 pl-4 w-full bg-gray-400 text-white">其他議案</h2>
+        <div class="border p-2 bg-gray-100">
+          <div class="p-2 my-2" ref="text2">
+            變更董事/變更經理人
+            申請書
+            股東會議事錄特別決議;或
+            辭職書影本;或
+            法人股東改派書或解任書
+            董事會議事錄及簽到簿影本;或
+            經理人辭職書影本
+            選任董事長
+            -董事長願任同意書
+            董事願任同意書
+            新董事身分證影本
+            新經理人身分證影本
+            委任書(如果有併案資本變動者記得!!+含資本額查核簽證)
+            變更登記表2份
+            規費現金1000元
+
+          </div>
+          <button class="btn p-2 my-2 border bg-sky-500 text-white rounded-md" @click="getRef('text2')">點我複製</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-sky-600 font-bold">測試是否複製成功，請在這邊貼上文字</h2>
+      <textarea name="" id="" rows="10" cols="100" class="border mb-6 bg-sky-100"></textarea>
+    </section>
+
+
+  </main>
+</body>
+
+</html>
